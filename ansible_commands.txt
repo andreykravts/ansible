@@ -1,0 +1,10 @@
+ansible all -m ping
+
+ansible windows_servers -m win_ping
+
+
+ansible windows_servers -m win_ping --ask-pass
+
+
+  git config --global user.email "andreykravts2210@gmail.com"
+  git config --global user.name "andreykravts"

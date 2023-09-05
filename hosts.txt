@@ -1,0 +1,16 @@
+[staging_server]
+centos9_1 ansible_host=127.0.0.10 ansible_user=osboxes ansible_ssh_pass=osboxes.org ansible_port=2222
+centos9_2 ansible_host=127.0.0.20 ansible_user=osboxes ansible_ssh_pass=osboxes.org ansible_port=2222
+centos9_3 ansible_host=127.0.0.30 ansible_user=osboxes ansible_ssh_pass=osboxes.org ansible_port=2222
+
+[staging_server:vars]
+
+[windows_servers]
+windows2019 ansible_host=127.0.0.19
+
+[windows_servers:vars]
+ansible_user = Administrator
+ansible_password = advit1234%
+ansible_port = 5986
+ansible_connection = winrm
+ansible_winrm_server_cert_validation = ignore
